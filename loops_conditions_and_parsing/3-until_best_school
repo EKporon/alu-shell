@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+#This uses the until loop to print messages multiple times
+i=1
+until [ $i -gt 10 ]
+do
+        echo "Best School"
+        i=$((i+1))
+done
