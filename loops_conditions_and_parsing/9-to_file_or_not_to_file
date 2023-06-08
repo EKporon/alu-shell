@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
-#This script display information about school fole
+# This script display information about school fole
 file="school"
-if [-e "$file" ]; then
+if [ -e "$file" ]; then
      echo "school file exists"
 
      if [ -s "$file" ]; then 
