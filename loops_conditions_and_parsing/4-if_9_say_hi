@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #This uses a loop to print a text multiple times and print another different text on the 9th line.
 i=1
-while [ $i -le 10]
+while [ $i -le 10 ]
 do
 	if [ $i -eq 9 ]
 	then
