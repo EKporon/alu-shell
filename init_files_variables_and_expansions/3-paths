@@ -1,0 +1,4 @@
+#!/bin/bash
+IFS=':' read -ra dirs <<< "$PATH"
+count=${#dirs[@]}
+echo "$count"
