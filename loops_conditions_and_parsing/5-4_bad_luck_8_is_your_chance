@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+#This loops through text and prints different text on line 4 and 8
+count=1
+
+while [ $count -le 10 ]; do
+    if [ $count -eq 4 ]; then
+	echo "bad luck"
+    elis [ $count -eq 8 ]; then
+	echo "good luck"
+    else
+	echo "Best School"
+    fi
+    count=$((count + 1))
+done
