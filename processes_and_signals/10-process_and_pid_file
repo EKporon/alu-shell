@@ -4,7 +4,7 @@ pid_file="/var/run/myscript.pid"
 
 # Function to handle SIGTERM signal
 handle_sigterm() {
-	echo "I hate the kill command" SIGTERM
+	echo "I hate the kill command"
 }
 
 # Function to handle SIGINT signal
