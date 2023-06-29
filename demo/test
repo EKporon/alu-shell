@@ -1,0 +1,26 @@
+#!/bin/bash
+
+sleep 300 &
+
+echo "The Process Information"
+
+ps aux
+
+echo "PID of the sleep process:"
+pid=$(pgrep sleep)
+echo "$pid"
+
+echo "Sending TERM SIGNAL TO THE SLEEP PROCESS....."
+
+pkill sleep
+if kill -0 $pid 2>/dev/null; then
+	echo "SLEEP PROCESS IS STILL RUNNING!"
+else
+	echo "SLEEP PROCESS HAS BEEN TERMINATED!"
+fi
+trap 'echo "EXITING THE SCRIPTING..."; exit' SIGINT
+
+while true; do
+	echo "RUNNING..."
+	sleep 2
+done
